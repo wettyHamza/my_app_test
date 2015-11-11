@@ -1,5 +1,6 @@
 package com.test.hamza.lavachefaitmeuh;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,13 +11,18 @@ import android.widget.ImageView;
 
 public class SplashActivity extends ActionBarActivity {
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ImageView splashIcon= (ImageView) findViewById(R.id.image_view);
-       Animation a =AnimationUtils.loadAnimation(this,android.R.anim.slide_in_left);
-        a.setDuration(3000);
+      // Animation a =AnimationUtils.loadAnimation(this,android.R.anim.slide_in_left);
+       // a.setDuration(3000);
+      //  Animation a =AnimationUtils.loadAnimation(this,R.anim.custom_anim);
+        //splashIcon.startAnimation(a);
+       Intent i=new Intent(this,MainActivity.class);
+       this.startActivity(i);
+
     }
 
 

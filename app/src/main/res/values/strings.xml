@@ -4,5 +4,6 @@
     <string name="app_name">La Vache Fait Meuh</string>
     <string name="name">LaVacheFaitMeuh</string>
     <string name="action_settings">Settings</string>
+    <string name="version">1.0</string>
 
 </resources>
